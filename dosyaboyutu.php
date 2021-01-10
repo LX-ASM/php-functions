@@ -8,7 +8,7 @@ $dosya = "/".$dosya;
 
 if(!file_exists($dosya)){ #check file exists
 echo "Dosya bulunamadı."
-exit;
+exit();
 }
 
 
