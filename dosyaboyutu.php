@@ -5,10 +5,10 @@ if(substr($dosya, 0, 2)=="./") #fix path problems
 $dosya = substr($dosya, 2);
 else if(substr($dosya, 0, 1)!="/")
 $dosya = "/".$dosya; 
-
+  
 if(!file_exists($dosya)){ #check file exists
-echo "Dosya bulunamadı."
-exit();
+echo "Dosya bulunamadı.\n";
+exit;
 }
 
 
